@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Richard Caesar - Exploring the Universe</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: black;
+            color: white;
+            text-align: center;
+        }
+        header {
+            background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+            padding: 20px;
+            font-size: 24px;
+        }
+        .container {
+            padding: 20px;
+        }
+        .visual {
+            width: 100%;
+            height: 400px;
+            background: url('images/nebula.png') no-repeat center;
+            background-size: cover;
+            position: relative;
+        }
+        .content {
+            margin: 20px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            text-align: justify;
+        }
+        .article-list {
+            margin: 20px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+        }
+        .article-list a {
+            display: block;
+            color: cyan;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .article-list a:hover {
+            text-decoration: underline;
+        }
+        .footer {
+            margin-top: 20px;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Richard Caesar - Exploring the Universe
+    </header>
+    <div class="container">
+        <div class="visual" id="nebula"></div>
+        <div class="content">
+            <h2>Why Do We Explore Space?</h2>
+            <p>From the moment humanity gazed at the night sky, a deep and unquenchable curiosity has driven us to explore the vast cosmos. What lies beyond our world? Are we alone in the universe? These existential questions have shaped our civilizations, inspiring great minds to seek knowledge beyond the boundaries of Earth.
+            
+            The urge to explore space is not just about discovering new planets or unraveling cosmic mysteries—it is a reflection of our intrinsic nature. We are explorers by design, always pushing the limits of what is possible. The unknown beckons us, not just with the promise of scientific discovery, but with the potential for a deeper understanding of our place in the grand tapestry of existence.
+            
+            Space exploration challenges us intellectually, technologically, and philosophically. It forces us to reconsider our limitations, uniting us in a common pursuit of knowledge. Every mission, from landing on the Moon to sending probes beyond our solar system, is a testament to human ingenuity and perseverance. 
+            
+            Perhaps, at the heart of our cosmic journey, lies a fundamental truth—by reaching for the stars, we seek not just the secrets of the universe, but the essence of our own humanity.</p>
+        </div>
+        <div class="article-list">
+            <h2>Read More</h2>
+            <a href="https://www.nasa.gov/universe" target="_blank">NASA - The Universe</a>
+            <a href="https://www.space.com/34-image-day.html" target="_blank">Space.com - Universe Pictures</a>
+            <a href="https://www.scientificamerican.com/space/" target="_blank">Scientific American - Space</a>
+        </div>
+        <div class="footer">
+            <p>Website by Richard Caesar | NIM: 09020282428031</p>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("mousemove", function(event) {
+            let nebula = document.getElementById("nebula");
+            let x = event.clientX / window.innerWidth * 50;
+            let y = event.clientY / window.innerHeight * 50;
+            nebula.style.backgroundPosition = `${50 + x}% ${50 + y}%`;
+        });
+    </script>
+</body>
+</html>
